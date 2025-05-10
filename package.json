@@ -2,16 +2,15 @@
   "name": "ocado-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Michal1992906.github.io/ocado-shop",
+  "homepage": "https://Michal1992906.github.io/ocado-shop/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-     "predeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-
   },
   "dependencies": {
     "react": "^19.1.0",
