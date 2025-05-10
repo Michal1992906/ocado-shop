@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zamówienie</title>
+</head>
+<body>
+  <h1>Zamówienie złożone pomyślnie!</h1>
+  <div id="order-summary"></div>
+  <a href="/">Wróć do listy produktów</a>
+
+  <script>
+    const order = JSON.parse(localStorage.getItem('order') || '[]');
+    const total = localStorage.getItem('orderTotal');
+    localStorage.removeItem('order');
+    localStorage.removeItem('orderTotal');
+
+    const summaryDiv = document.getElementById('order-summary');
+    order.forEach(item => {
+      const p = document.createElement('p');
+      p.textContent = `${item.product.name} x ${item.quantity}`;
+      summaryDiv.appendChild(p);
+    });
+
+    const totalP = document.createElement('p');
+    totalP.textContent = `Razem: ${total} zł`;
+    summaryDiv.appendChild(totalP);
+  </script>
+</body>
+</html>
