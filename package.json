@@ -2,6 +2,7 @@
   "name": "ocado-project",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Michal1992906.github.io/ocado-shop",
   "type": "module",
   "scripts": {
     "dev": "vite",
