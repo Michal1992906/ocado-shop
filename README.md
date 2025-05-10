@@ -1,4 +1,4 @@
-# Michal_Czyzyk_Web_Wrocław
+# Imię_Nazwisko_Web_Wrocław
 
 Technologie: React, TypeScript, Vite
 
